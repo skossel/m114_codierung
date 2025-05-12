@@ -1,3 +1,6 @@
+# Tag 1
+
+## Aufgabe 1
 ## 1. Umrechnung 11111111B in Dezimal
 2 hoch 0 = 1
 2 hoch 1 = 2
@@ -22,8 +25,25 @@ Info: von rechts nach links zählen 1-64
 255 D = FF H
 Auteilen: 1111 1111
 F = 1111
+1 + 2 + 4 + 8  = 15 -> F
 ## 5. Umrechnung 10110101B in Hexadezimal
 ## 6. Umrechnung FFH in Binär
 ## 7. Umrechnung E7H in Binär
 ## 8. Umrechnung 37D in Binär
 ## 9. Wieviele Bit werden mindestens benötigt, um 1000 Bitkombinationen darzustellen?
+
+## Aufgabe 2
+## 1. Addiere die beiden 4Bit Integer 0101B + 0011B
+0101B
+0011B
+------
+1000B
+
+## 2. Addiere die beiden 4Bit Integer 1101B + 0110B
+1101B
+0110B
+------
+0001 0011B -> falsch
+0011B -> richtig 1 Bit ist Data Overflow
+## 3. Umrechnung -4D in Unsigned Integer mit Bitbreite 4
+## 4. Umrechnung -18D in Unsigned Integer mit Bitbreite 8
