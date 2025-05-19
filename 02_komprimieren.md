@@ -78,19 +78,24 @@ E + erstes wort also E = EE
 9. Jetzt mit D10000.txt die ZIP-Datei Z10000.zip
 10. Schlussendlichmit D100000.txt die ZIP-Datei Z100000.zip
 11. Erfassen sie nun in einer EXCEL-Tabelle die Speichergrössen aller ASCII-Dateien und den entsprechenden ZIP-Dateien. (Siehe Datei/Eigenschaften/Grösse (Nicht Grösse auf dem Datenträger!)
-Antwort: [zip_comparison.xlsx](zip_comparison.xlsx)
 12. Wie interpretieren bzw. begründen sie ihr Resultat?
    Tipp: Sie können in EXCEL Zahlenreihen auch grafisch anzeigen.
+![vergleich_bytes.png](02_komprimierung_ablage/vergleich_bytes.png)
 
 Antwort: 100'000 Zeichen wurden in ZIP Format um Faktor 50 verkleinert zu 2KB.
 10'000 Zeichen wurden in ZIP Format um Faktor 10 verkleinert zu 1KB.
 1'000, 100, 10 wurden nicht verkleinert, sondern sind immernoch 1 KB gross.
+
+Grund: bei kleineren Dateien ist der Overhead (ZIP) grösser als die Komprimierung.
 13. Erstellen sie eine ASCII-Textdatei mit 100'000 mal dem Buchstaben A und zippen sie diese.
    Vergleichen sie nun die beiden ZIP-Dateien mit 100'000 Zeichen. Wie erklären sie sich den
    Unterschied der Speichergrössen?
 
 Antwort:
 als TXT 98KB Speicherplatz und als ZIP 1KB.
-14. Was bewirkt ZIP, wenn die Originaldatei (z.B. diese beiden JPG-Bilder) bereits komprimiert vorlieg
+Wenn man eine sehr gleichförmige Datei hat (z.B. nur Buchstaben „A“), erkennt ZIP das Muster und kann dadurch sehr viel Speicherplatz sparen – selbst bei grossen Dateien.
+
+15. Was bewirkt ZIP, wenn die Originaldatei (z.B. diese beiden JPG-Bilder) bereits komprimiert vorlieg
 1JPG: bei .jpg 257KB und bei .zip 237KB
 2JPG: bei .jpg 24KB und bei .zip 17KB
+Erklärung: JPG-Dateien sind bereits stark komprimiert; ZIP bringt hier kaum zusätzlichen Nutzen
