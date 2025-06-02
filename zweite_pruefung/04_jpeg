@@ -1,0 +1,42 @@
+Was ist DCT?
+DCT = Diskrete Kosinustransformation
+Ein Verfahren, das Bilder kleiner macht mit nur wenig sichtbarem Qualitätsverlust. Wird bei JPEG-Bildern verwendet.
+
+Warum kann man Bilder überhaupt verkleinern?
+menschliches Auge:
+sieht Helligkeit (schwarz-weiss) sehr gut,
+erkennt aber Farben nur ungenau
+
+→ Also: Bei DCT spart man bei den Farben, nicht aber bei der Helligkeit!
+
+So funktioniert JPEG in 6 Schritten
+Farben umwandeln:
+RGB → YCbCr (Helligkeit + 2 Farbanteile)
+
+Farben reduzieren (Chroma Subsampling):
+4:2:0 → weniger Farbpunkte, aber fast kein Unterschied fürs Auge
+
+Bild in kleine Blöcke (8×8 Pixel) einteilen
+
+DCT anwenden:
+Rechnet jeden Block in Frequenzen um (wie Musik: tiefe vs. hohe Töne)
+
+Quantisierung:
+Unwichtige Details (hohe Frequenzen) werden auf 0 gesetzt → spart Platz
+
+Komprimieren mit RLE + Huffman:
+Lange Zahlenreihen clever kürzen
+
+Wie viel spart das?
+Originalbild: z.B 46 MB
+
+JPEG-komprimiert: nur 4 MB
+
+Qualität bleibt fast gleich, besonders bei Fotos
+
+Achtung bei zu starker Kompression
+Blocking-Artefakte: sichtbare Kanten in Blöcken
+
+Details fehlen: z.B. in Text oder Grafiken
+
+Nicht gut für Nachbearbeitung (z.B. Greenscreen)

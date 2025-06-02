@@ -80,7 +80,7 @@ E + erstes wort also E = EE
 11. Erfassen sie nun in einer EXCEL-Tabelle die Speichergrössen aller ASCII-Dateien und den entsprechenden ZIP-Dateien. (Siehe Datei/Eigenschaften/Grösse (Nicht Grösse auf dem Datenträger!)
 12. Wie interpretieren bzw. begründen sie ihr Resultat?
    Tipp: Sie können in EXCEL Zahlenreihen auch grafisch anzeigen.
-![vergleich_bytes.png](02_komprimierung_ablage/vergleich_bytes.png)
+![vergleich_bytes.png](../02_komprimierung_ablage/vergleich_bytes.png)
 
 Antwort: 100'000 Zeichen wurden in ZIP Format um Faktor 50 verkleinert zu 2KB.
 10'000 Zeichen wurden in ZIP Format um Faktor 10 verkleinert zu 1KB.
